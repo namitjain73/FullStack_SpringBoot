@@ -1,16 +1,50 @@
-# React + Vite
+# 📊 AutoViz Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Automated Data Visualization & Dashboard Generator
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Overview
 
-## React Compiler
+AutoViz Dashboard is a full-stack web application that converts raw data files (CSV or Excel) into interactive dashboards automatically.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It detects data types and generates charts without requiring manual configuration.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Upload `.csv`, `.xls`, `.xlsx` files  
+- Automatic detection of numerical and categorical data  
+- Auto-generated charts:
+  - Bar Chart (Distribution)
+  - Line Chart (Trend)
+  - Pie Chart (Composition)  
+- Dynamic filtering  
+- Aggregations (Sum, Average, Count)  
+- Export filtered data to CSV  
+- Clean and responsive UI  
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React (Vite)
+- Recharts
+- CSS
+
+### Backend
+- Spring Boot (Java)
+- Apache POI
+- OpenCSV
+
+---
+
+## ⚙️ Setup Instructions
+
+### Backend
+
+```bash
+cd backend
+./mvnw spring-boot:run
